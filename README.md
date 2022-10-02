@@ -22,6 +22,6 @@ Detailed Research & Development Process: [https://github.com/eth-protocol-fellow
 ## Journal Backlog
 
 **[02/10/2022]**
-- Create the [draft](https://user-images.githubusercontent.com/114221396/193452397-19a40781-27bc-4218-b08c-5a42183c37e2.png) of how Forkchoice could look like.
+- Created the [draft](https://user-images.githubusercontent.com/114221396/193452397-19a40781-27bc-4218-b08c-5a42183c37e2.png) of how Forkchoice could look like.
 - Gathered feedback from R&D Discord regarding the Draft and some additional clarifications.
 - Writeup of the [Forkchoice Repo README](https://github.com/kevinbogner/forkchoice-epf).
