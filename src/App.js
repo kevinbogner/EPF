@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <> </> only 1 thing returnable, therefore fragement/wrapper.
+    <> 
+      <div className="App">
+        <h1>🍴 Forkchoice</h1>
+        <a href="https://github.com/kevinbogner/forkchoice-epf">GitHub</a>
+      </div>
+      <p>
+      Forkchoice aggregates Data of the Consensus Clients and tracks Block Proposals to identify network splits across clients.
+      This helps to statistically identify peering issues in the Consensus Client landscape.
+      </p>
+      <p>
+      These data points might help to further improve equality among Consensus Clients.
+      </p>
+    </>
+    
   );
 }
 
 export default App;
+

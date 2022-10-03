@@ -26,6 +26,8 @@ Detailed Research & Development Process: [https://github.com/eth-protocol-fellow
 
 **[03/10/2022]**
 - Research on Consensus Layer and Execution Layer.
+- Research on React App.
+- Configured the Layout of React for my project.
 
 **[02/10/2022]**
 - Created the [draft](https://user-images.githubusercontent.com/114221396/193452397-19a40781-27bc-4218-b08c-5a42183c37e2.png) of how Forkchoice could look like.
