@@ -18,11 +18,9 @@ These data points might help to further improve equality among Consensus Clients
 ![](https://user-images.githubusercontent.com/114221396/193452397-19a40781-27bc-4218-b08c-5a42183c37e2.png)
 *First draft of Forkchoice.*
 
----
+## Journal Backlog
 
 Detailed Research & Development Process: [https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner](https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner) *PR pending*
-
-## Journal Backlog
 
 **[03/10/2022]**
 - Research on Consensus Layer and Execution Layer.
