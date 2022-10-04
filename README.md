@@ -15,18 +15,23 @@ Based on the data provided by Forkchoice, users could come to conclusions such a
 These data points might help to further improve the communication among Consensus Clients.
 
 
-![](https://user-images.githubusercontent.com/114221396/193452397-19a40781-27bc-4218-b08c-5a42183c37e2.png)
-*First draft of Forkchoice.*
+![](https://user-images.githubusercontent.com/114221396/193872844-dfb4a9b9-eb5c-4eed-84a5-fd7a238dae84.png)
+*Draft of Forkchoice.*
 
 ## Journal Backlog
 
 Detailed Research & Development Process: [https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner](https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner) *PR pending*
 
+
+**[04/10/2022]**
+- Implemented the [chart](https://user-images.githubusercontent.com/114221396/193872844-dfb4a9b9-eb5c-4eed-84a5-fd7a238dae84.png) with manually injected data.
+- Gathered feedback from R&D Discord: Maybe fees earned/client is interesting.
+- Asked in Sigma Primes Discord about the API of [blockprint](https://github.com/sigp/blockprint).
+
 **[03/10/2022]**
 - Research on Consensus Layer and Execution Layer.
 - Research on React App.
 - Configured the [first Layout](https://user-images.githubusercontent.com/114221396/193602030-5ab6b761-93c2-4416-8331-ab14fc7a1218.png) of my project.
-
 
 **[02/10/2022]**
 - Created the [draft](https://user-images.githubusercontent.com/114221396/193452397-19a40781-27bc-4218-b08c-5a42183c37e2.png) of how Forkchoice could look like.
