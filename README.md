@@ -12,7 +12,7 @@ Based on the data provided by Forkchoice, users could come to conclusions such a
 
 > In many instances, the voting process of *Nodes by X* is delayed if the block was proposed by *Nodes by Y*.
 
-These data points might help to further improve equality among Consensus Clients.
+These data points might help to further improve the communication among Consensus Clients.
 
 
 ![](https://user-images.githubusercontent.com/114221396/193452397-19a40781-27bc-4218-b08c-5a42183c37e2.png)
