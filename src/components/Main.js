@@ -1,3 +1,5 @@
+import Chart from "./Chart";
+
 const Main = () => {
     return (
         <div>
@@ -7,9 +9,9 @@ const Main = () => {
           Forkchoice aggregates Data of the Consensus Clients and tracks Block Proposals to identify network splits across clients.
           This helps to statistically identify peering issues in the Consensus Client landscape.
           </p>
-          <img src={`${process.env.PUBLIC_URL}draft.png`} alt="First draft of Forkchoice."/>
+          <Chart />
           <p>
-          These data points might help to further improve equality among Consensus Clients.
+          These data points might help to further improve the communication among Consensus Clients.
           </p>
       </div>
     )
