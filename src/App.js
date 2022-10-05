@@ -1,11 +1,12 @@
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
+import Blockprint from './components/Blockprint';
 
 import './App.css';
 
 function App() {
-  
+
   return (
     // <> </> only 1 thing returnable, therefore fragement/wrapper.
     <> 
@@ -13,6 +14,7 @@ function App() {
           <Header />
           <Main />
           <Footer />
+          <Blockprint />
       </div>
     </>
   
@@ -20,4 +22,3 @@ function App() {
 }
 
 export default App;
-
