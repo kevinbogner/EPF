@@ -4,9 +4,9 @@ Forkchoice is a project created as part of the third cohort of the [Ethereum Pro
 
 ## Overview
 
-Forkchoice aggregates Data of the Consensus Clients and tracks Block Proposals to identify network splits across clients. This helps to statistically identify peering issues in the Consensus Client landscape.
+This project is a **Data Analysis of Consensus Clients to statistically identify peering issues, aiming to improve communication at the Consensus Layer.**
 
-Based on the data provided by Forkchoice, users could come to conclusions such as:
+Based on the data provided users could come to conclusions such as:
 
 > *Nodes by X* mainly voted for the orphaned block, while *Nodes by Y* voted for the canonical block.
 
@@ -18,10 +18,15 @@ These data points might help to further improve the communication among Consensu
 ![](https://user-images.githubusercontent.com/114221396/193872844-dfb4a9b9-eb5c-4eed-84a5-fd7a238dae84.png)
 *Draft of Forkchoice.*
 
+
 ## Journal Backlog
 
-Detailed Research & Development Process: [https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner](https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner) *PR pending*
+Detailed Research & Development Process: [https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner](https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner)
 
+
+**[07/10/2022]**
+- Published [Dev Update #1](https://hackmd.io/@lODlsf2CR9uWlyIyEdjjPQ/HkeQ_Qnfi).
+- [Tweet](https://twitter.com/kevin_bogner/status/1578353105623601152) about [Dev Update #1](https://hackmd.io/@lODlsf2CR9uWlyIyEdjjPQ/HkeQ_Qnfi).
 
 **[06/10/2022]**
 - Started writing [Dev Update #1](https://user-images.githubusercontent.com/114221396/194361684-e8f2f590-1dd2-4e39-ac20-7f1899eeebc2.png), which I will probably finish tomorrow.
