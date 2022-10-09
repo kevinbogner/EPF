@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Blockprint from './components/Blockprint';
 
 import './App.css';
+import Etherscan from './components/Etherscan';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
           <Main />
           <Footer />
           <Blockprint />
+          <Etherscan />
       </div>
     </>
   
