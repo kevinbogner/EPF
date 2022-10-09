@@ -9,9 +9,9 @@ function Etherscan() {
       Axios.get("https://api.etherscan.io/api?module=block&action=getblockreward&blockno=187&apikey=J89B32DSNTZ4WZN8WVGHFFJHFIXEPP4VTQ").then((response)=> {
         //console.log(response)
         setEtherscan(
-            " BlockNumber " + response.data.result.blockNumber +
-            " Timestamp " + response.data.result.timeStamp +
-            " BlockReward " + response.data.result.blockReward)
+            " BlockNumber: " + response.data.result.blockNumber +
+            " Timestamp: " + response.data.result.timeStamp +
+            " BlockReward: " + response.data.result.blockReward)
       })
     }
 
