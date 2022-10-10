@@ -2,9 +2,11 @@ import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
 import Blockprint from './components/Blockprint';
+import Etherscan from './components/Etherscan';
+import Table from './components/Table';
 
 import './App.css';
-import Etherscan from './components/Etherscan';
+
 
 function App() {
 
@@ -14,9 +16,10 @@ function App() {
       <div className="App">
           <Header />
           <Main />
-          <Footer />
           <Blockprint />
           <Etherscan />
+          <Table />
+          <Footer />
       </div>
     </>
   
