@@ -38,5 +38,3 @@ function Table() {
 }
   
 export default Table;
-
-//highest https://api.blockprint.sigp.io/blocks/4882248/4882249
