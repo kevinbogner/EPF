@@ -12,8 +12,7 @@ For now, the primary sources of the data are [blockprint](https://github.com/sig
 
 
 ## Journal Backlog
-
-Detailed Research & Development Process: [https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner](https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner)
+:sparkler: **Detailed Research & Development Process: https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner**.
 
 **[10/14/2022]**
 - Updated README.md.
