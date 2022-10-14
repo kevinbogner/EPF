@@ -1,27 +1,22 @@
-# 🍴 Project - Forkchoice
+# 💾Data Analysis of Consensus Clients
 
-Forkchoice is a project created as part of the third cohort of the [Ethereum Protocol Fellowship (EPF)](https://github.com/eth-protocol-fellows/cohort-three/blob/master/program-guide/program-details.md).
+This project is created as part of the third cohort of the [Ethereum Protocol Fellowship (EPF)](https://github.com/eth-protocol-fellows/cohort-three/blob/master/program-guide/program-details.md).
 
 ## Overview
 
-This project is a **Data Analysis of Consensus Clients to statistically identify peering issues, aiming to improve communication at the Consensus Layer.**
+The aim is to provide a **Data Analysis of the Consensus Clients landscape to statistically identify inconsistency, seeking to improve the Consensus Layer.**
 
-Based on the data provided users could come to conclusions such as:
+![image](https://user-images.githubusercontent.com/114221396/195844787-5cc35843-4069-49e0-afd5-e6f50ab4104f.png)
 
-> *Nodes by X* mainly voted for the orphaned block, while *Nodes by Y* voted for the canonical block.
-
-> In many instances, the voting process of *Nodes by X* is delayed if the block was proposed by *Nodes by Y*.
-
-These data points might help to further improve the communication among Consensus Clients.
-
-
-![](https://user-images.githubusercontent.com/114221396/193872844-dfb4a9b9-eb5c-4eed-84a5-fd7a238dae84.png)
-*Draft of Forkchoice.*
+For now, the primary sources of the data are [blockprint](https://github.com/sigp/blockprint) for client data and https://beaconcha.in/ for reward data.
 
 
 ## Journal Backlog
 
 Detailed Research & Development Process: [https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner](https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner)
+
+**[10/14/2022]**
+- Updated README.md.
 
 **[10/13/2022]**
 - Fetching [block's data](https://user-images.githubusercontent.com/114221396/195835697-98904eae-5f4f-46ae-a113-708e6e6760c1.png) from https://beaconcha.in/.
