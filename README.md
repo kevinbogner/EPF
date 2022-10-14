@@ -23,10 +23,13 @@ These data points might help to further improve the communication among Consensu
 
 Detailed Research & Development Process: [https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner](https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner)
 
+**[10/13/2022]**
+- Fetching [block's data](https://user-images.githubusercontent.com/114221396/195835697-98904eae-5f4f-46ae-a113-708e6e6760c1.png) from https://beaconcha.in/.
+- Fetching [data of skipped slots](https://user-images.githubusercontent.com/114221396/195837203-b616384b-3e27-4d39-bb60-ce2a084b5eb7.png) from https://beaconcha.in/.
+
 **[10/12/2022]**
 - [Merged Data](https://user-images.githubusercontent.com/114221396/195393208-22f25978-e616-4cb5-94db-a5483a13d4ad.png) of Clients and Rewards.
 - [Overview](https://user-images.githubusercontent.com/114221396/195393717-a99d6698-29ed-4965-b73b-fa136499a4ba.png) of fetched Data.
-
 
 **[10/11/2022]**
 - [Fetched data](https://user-images.githubusercontent.com/114221396/195311091-ec87b902-5954-40f6-a23e-c7ed193b6f7b.png) from [blockprint](https://github.com/sigp/blockprint).
