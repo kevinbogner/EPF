@@ -3,16 +3,12 @@ import Chart from "./Chart";
 const Main = () => {
     return (
         <div>
-        <h1>🍴 Forkchoice</h1>
-          <a href="https://github.com/kevinbogner/forkchoice-epf">GitHub</a>
+        <h1>💾Data Analysis of Consensus Clients</h1>
+          <a href="https://github.com/kevinbogner/data-analysis-consensus-clients">GitHub</a>
           <p>
-          Forkchoice aggregates Data of the Consensus Clients and tracks Block Proposals to identify network splits across clients.
-          This helps to statistically identify peering issues in the Consensus Client landscape.
+          The aim is to provide a Data Analysis of the Consensus Clients landscape to statistically identify inconsistency, seeking to improve the Consensus Layer.
           </p>
           <Chart />
-          <p>
-          These data points might help to further improve the communication among Consensus Clients.
-          </p>
       </div>
     )
 }

@@ -3,9 +3,13 @@ import Main from './components/Main';
 import Footer from './components/Footer';
 import Blockprint from './components/Blockprint';
 import Etherscan from './components/Etherscan';
-import Table from './components/Table';
+import TableClientReward from './components/TableClientReward';
 
 import './App.css';
+import TableRelayer7d from './components/TableRelayer7d';
+import TableRelayer30d from './components/TableRelayer30d';
+import TableSkippedSlots from './components/TableSkippedSlots';
+
 
 
 function App() {
@@ -18,7 +22,10 @@ function App() {
           <Main />
           <Blockprint />
           <Etherscan />
-          <Table />
+          <TableClientReward />
+          <TableRelayer7d />
+          <TableRelayer30d />
+          <TableSkippedSlots />
           <Footer />
       </div>
     </>
