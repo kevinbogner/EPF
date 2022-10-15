@@ -9,6 +9,7 @@ import './App.css';
 import TableRelayer7d from './components/TableRelayer7d';
 import TableRelayer30d from './components/TableRelayer30d';
 import TableSkippedSlots from './components/TableSkippedSlots';
+import ChartClient from './components/ChartClient';
 
 
 
@@ -22,6 +23,7 @@ function App() {
           <Main />
           <Blockprint />
           <Etherscan />
+          <ChartClient />
           <TableClientReward />
           <TableRelayer7d />
           <TableRelayer30d />
