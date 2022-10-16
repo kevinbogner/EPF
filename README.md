@@ -15,6 +15,10 @@ For now, the primary sources of the data are [blockprint](https://github.com/sig
 ## Journal Backlog
 :sparkler: **Detailed Research & Development Process: https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner**.
 
+**[10/16/2022]**
+- Pivot to https://www.python.org/ and https://streamlit.io/.
+- Visualize data.
+
 **[10/15/2022]**
 - [Tables](https://user-images.githubusercontent.com/114221396/195984206-9690965b-7046-459f-ae15-1fcc1a41af41.png) displayed in React.
 - Next Steps: Visualize Tables and Automate Data Import.
