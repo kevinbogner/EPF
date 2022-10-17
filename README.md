@@ -6,7 +6,7 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 
 The aim is to provide a **Data Analysis of the Consensus Clients landscape to statistically identify inconsistency, seeking to improve the Consensus Layer.**
 
-![image](https://user-images.githubusercontent.com/114221396/196051309-7abcb35f-db99-4a3c-8031-b48254489724.png)
+![image](https://user-images.githubusercontent.com/114221396/196202723-77851bae-bf00-4b4e-8e17-33e965782025.png)
 
 For now, the primary sources of the data are [blockprint](https://github.com/sigp/blockprint) for client data and https://beaconcha.in/ for reward data.
 
@@ -14,6 +14,9 @@ For now, the primary sources of the data are [blockprint](https://github.com/sig
 
 ## Journal Backlog
 :sparkler: **Detailed Research & Development Process: https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner**.
+
+**[10/17/2022]**
+- Creating [visualization](https://user-images.githubusercontent.com/114221396/196202723-77851bae-bf00-4b4e-8e17-33e965782025.png) with https://plotly.com/graphing-libraries/
 
 **[10/16/2022]**
 - Pivot to https://www.python.org/ and https://streamlit.io/.
