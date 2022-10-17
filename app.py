@@ -1,14 +1,17 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
-import plotly.figure_factory as ff
-import matplotlib.pyplot as plt
+import plotly.express as px
 
-st.set_page_config(layout="wide")
+#Streamlit Configs
+st.set_page_config(page_title="Data Analysis Consensus Clients",
+                   page_icon=":floppy_disk:",
+                   layout="wide")
+
 st.title('💾Data Analysis of Consensus Clients')
 st.markdown('The aim is to provide a **Data Analysis of the Consensus Clients landscape to statistically identify inconsistency, seeking to improve the Consensus Layer.**')
-st.header('Client Data')
 
+
+#Import data from .csv
 @st.cache
 def load_slotclientreward_data(nrows):
     data = pd.read_csv('./data/slotclientreward.csv', nrows=nrows)
@@ -25,14 +28,22 @@ def load_relay30d_data(nrows):
     return data
 
 
-
 #Load data
 slotclientreward_data = load_slotclientreward_data(100)
 relay7d_data = load_relay7d_data(100)
 relay30d_data = load_relay30d_data(100)
 
 
-#Data by checking boxes
+#Chart
+st.subheader('Chart')
+
+#BarChart
+fig = px.bar(slotclientreward_data, x = 'Client', y = 'Number of Slots', color='Number of Slots', color_continuous_scale='Viridis')
+st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
+
+
+
+#Data
 st.subheader('Data')
 if st.checkbox('Slot Client Reward'):
     st.markdown('Provided by [blockprint](https://github.com/sigp/blockprint) and [beaconcha.in](https://beaconcha.in/)')
