@@ -45,16 +45,3 @@ if st.checkbox('Relay 7d'):
 if st.checkbox('Relay 30d'):
     st.markdown('Provided by [beaconcha.in](https://beaconcha.in/)')
     st.write(relay30d_data)
-
-
-
-
-
-
-
-
-#block_data = pd.read_csv('./data/data.csv')
-#st.write(block_data.head())
-
-#numberofslots_dist = pd.DataFrame(block_data['Client'].value_counts())
-#st.bar_chart(numberofslots_dist)
