@@ -1,0 +1,8 @@
+Name,BlockCount,UniqueBuilder,AverageReward,HighestReward,OverallRewards,Uncensored,Unfiltered
+Flashbots (Relay),20715 (41.10%),27,0.12284278 ETH,81.00241977 ETH (Slot 4903350),"2,544.68820111 ETH",No,Yes
+BloXroute [Max-Profit] (Relay),1625 (3.22%),3,0.08211211 ETH,13.52927684 ETH (Slot 4903353),133.43217647 ETH,Yes,Yes
+Blocknative (Relay),1295 (2.57%),1,0.08038891 ETH,16.52316402 ETH (Slot 4905606),104.10363284 ETH,No,???
+Eden Network (Relay),1087 (2.16%),2,0.38496164 ETH,278.29152063 ETH (Slot 4867314),418.45330459 ETH,No,???
+BloXroute [Ethical] (Relay),1056 (2.10%),2,0.05564702 ETH,1.45552517 ETH (Slot 4904798),58.76325639 ETH,Yes,No
+Manifold (Relay),1046 (2.08%),2,0.06730583 ETH,6.39205779 ETH (Slot 4904444),70.40189766 ETH,Yes,Yes
+BloXroute [Regulated] (Relay),456 (0.90%),3,0.08393644 ETH,4.8364185 ETH (Slot 4905241),38.27501748 ETH,No,Yes
