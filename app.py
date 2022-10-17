@@ -56,3 +56,7 @@ if st.checkbox('Relay 7d'):
 if st.checkbox('Relay 30d'):
     st.markdown('Provided by [beaconcha.in](https://beaconcha.in/)')
     st.write(relay30d_data)
+
+
+#Footer
+st.subheader('Footer')
