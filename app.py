@@ -10,6 +10,7 @@ st.set_page_config(page_title="Data Analysis Consensus Clients",
 
 st.title('💾Data Analysis of Consensus Clients')
 st.markdown('Data provided by [blockprint](https://github.com/sigp/blockprint) and [beaconcha.in](https://beaconcha.in/). Thank You:heart:')
+st.markdown('Last Updated on Slot: 4895291')
 
 
 #Import data from .csv
