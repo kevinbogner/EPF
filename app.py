@@ -57,15 +57,12 @@ st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
 #Data
 st.subheader('Data')
 if st.checkbox('Slot Client Reward'):
-    st.markdown('Provided by [blockprint](https://github.com/sigp/blockprint) and [beaconcha.in](https://beaconcha.in/)')
     st.write(slotclientreward_data)
 
 if st.checkbox('Relay 7d'):
-    st.markdown('Provided by [beaconcha.in](https://beaconcha.in/)')
     st.write(relay7d_data)
 
 if st.checkbox('Relay 30d'):
-    st.markdown('Provided by [beaconcha.in](https://beaconcha.in/)')
     st.write(relay30d_data)
 
 
