@@ -9,7 +9,7 @@ st.set_page_config(page_title="Data Analysis Consensus Clients",
                    )
 
 st.title('💾Data Analysis of Consensus Clients')
-st.markdown('The aim is to provide a **Data Analysis of the Consensus Clients landscape to statistically identify inconsistency, seeking to improve the Consensus Layer.**')
+st.markdown('Provided by [blockprint](https://github.com/sigp/blockprint) and [beaconcha.in](https://beaconcha.in/). Thank You:heart:')
 
 
 #Import data from .csv
