@@ -14,6 +14,9 @@ For now, the primary sources of the data are [blockprint](https://github.com/sig
 ## Journal Backlog
 :sparkler: **Detailed Research & Development Process: https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner**.
 
+**[10/18/2022]**
+- Adding new charts to the Website.
+
 **[10/17/2022]**
 - Creating [visualization](https://user-images.githubusercontent.com/114221396/196202723-77851bae-bf00-4b4e-8e17-33e965782025.png) with https://plotly.com/graphing-libraries/
 - Deployed the Website at https://kevinbogner-data-analysis-consensus-clients-app-lz484x.streamlitapp.com/
