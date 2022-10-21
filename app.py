@@ -104,8 +104,8 @@ if selected == "From Merge to Now":
     st.title(f"You have selected {selected}")
         #---Overview---
     col1, col2 = st.columns(2)
-    col1.metric("Last Updated on Slot:", "4953535")
-    col2.metric("Last Updated on Block:", "15789106")
+    col1.metric("Range of Slots:", "4700013 - 4953535")
+    col2.metric("Range of Blocks:", "15537394  - 15789106")
 
 
 
@@ -217,8 +217,8 @@ if selected == "Last 7 Days":
     st.title(f"You have selected {selected}")
         #---Overview---
     col1, col2 = st.columns(2)
-    col1.metric("Dataframe Slot", "4953535 - 4903535")
-    col2.metric("Dataframe Block", "15789106 - 15739391")
+    col1.metric("Range of Slots", "4903535 - 4953535")
+    col2.metric("Range of Blocks", "15739391 - 15789106")
 
 
     #---Consensus Clients Overview---
