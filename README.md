@@ -17,6 +17,7 @@ For now, the primary sources of the data are [blockprint](https://github.com/sig
 **[10/21/2022]**
 - Fetched [data of Clients and Relays](https://user-images.githubusercontent.com/114221396/197228380-c0a6eb72-f5b9-421b-a72a-1afcfeb617f8.png).
 - [Created Dropdown](https://user-images.githubusercontent.com/114221396/197228617-374b8e22-3650-47f6-a8b0-6b6b67a3f2c9.png) to display Client data.
+- Added [Dataset](https://user-images.githubusercontent.com/114221396/197270088-5a9d1297-b227-452f-9977-74c0be3abf73.png) of 'Last 7 Days'.
 
 **[10/19/2022]**
 - Published [Dev Update #2](https://hackmd.io/@lODlsf2CR9uWlyIyEdjjPQ/SkSBLnG7i).
