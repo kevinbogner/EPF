@@ -9,6 +9,15 @@ st.set_page_config(page_title="Data Analysis Consensus Clients",
                    layout="wide"
                    )
 
+hide_menu_style = """
+        <style>
+        #MainMenu {visibility: hidden; }
+        footer {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_menu_style, unsafe_allow_html=True)
+
+
 st.title('💾Data Analysis of Consensus Clients')
 
 CLIENTCOLOR = {'Prysm':'aqua', 'Lighthouse':'mediumslateblue', 'Teku':'mediumblue', 'Nimbus':'orange','Lodestar':'yellow'}
