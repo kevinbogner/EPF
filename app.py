@@ -18,7 +18,8 @@ hide_menu_style = """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
 
 
-st.title('💾Data Analysis of Consensus Clients')
+#st.title('💾Data Analysis of Consensus Clients')
+st.markdown("<h1 style='text-align: center; color: white;'>💾Data Analysis of Consensus Clients</h1>", unsafe_allow_html=True)
 
 CLIENTCOLOR = {'Prysm':'aqua', 'Lighthouse':'mediumslateblue', 'Teku':'mediumblue', 'Nimbus':'orange','Lodestar':'yellow'}
 RELAYCOLOR = {'flashbots':'blueviolet', 'bloxroute (max profit)':'crimson', 'blocknative':'darkseagreen', 'eden':'mediumslateblue', 'bloxroute (ethical)':'burlywood', 'manifold':'aqua', 'bloxroute (regulated)':'lightcoral', 'none':'palegreen'}
@@ -114,7 +115,8 @@ if selected == "From Merge to Now":
         fig = px.bar(reward_data, x = 'client', y = 'reward', color='client', color_discrete_map=CLIENTCOLOR, title='BlockReward/Slot Grouped by Client')
         st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
 
-    st.subheader('Data Grouped by Client')
+    #st.subheader('Data Grouped by Client')
+    st.markdown("<h3 style='text-align: center; color: white;'>Data Grouped by Client</h3>", unsafe_allow_html=True)
 
     contact_options = ["Select Client", "Prysm", "Lighthouse", "Teku", "Nimbus", "Lodestar"]
     contact_selected = st.selectbox("Select Client", label_visibility="hidden", options = contact_options)
@@ -219,7 +221,8 @@ if selected == "Last 7 Days":
         fig = px.bar(reward7_data, x = 'client', y = 'reward', color='client', color_discrete_map=CLIENTCOLOR, title='BlockReward/Slot Grouped by Client')
         st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
 
-    st.subheader('Data Grouped by Client')
+    #st.subheader('Data Grouped by Client')
+    st.markdown("<h3 style='text-align: center; color: white;'>Data Grouped by Client</h3>", unsafe_allow_html=True)
 
     contact_options = ["Select Client", "Prysm", "Lighthouse", "Teku", "Nimbus", "Lodestar"]
     contact_selected = st.selectbox("Select Client", label_visibility="hidden", options = contact_options)
@@ -299,4 +302,6 @@ if selected == "Last 7 Days":
             st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
 
 
-st.markdown('Data provided by [blockprint](https://github.com/sigp/blockprint) and [beaconcha.in](https://beaconcha.in/). Thank You:heart:')
+
+st.markdown('Data provided by [blockprint](https://github.com/sigp/blockprint), [Relay API](https://flashbots.notion.site/Relay-API-Documentation-5fb0819366954962bc02e81cb33840f5) and [beaconcha.in](https://beaconcha.in/). Thank You:heart:')
+st.markdown(':computer: [GitHub](https://github.com/kevinbogner/data-analysis-consensus-clients) and :bird:[Twitter](https://twitter.com/kevin_bogner)')
