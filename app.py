@@ -16,84 +16,60 @@ RELAYCOLOR = {'flashbots':'blueviolet', 'bloxroute (max profit)':'crimson', 'blo
 
 #---Import TOTAL data from .csv---
 @st.cache
+def load_relay_data(nrows):
+    data = pd.read_csv('./data/relay.csv', nrows=nrows)
+    return data
+
+@st.cache
+def load_relrew_data(nrows):
+    data = pd.read_csv('./data/relrew.csv', nrows=nrows)
+    return data
+
+@st.cache
+def load_reward_data(nrows):
+    data = pd.read_csv('./data/reward.csv', nrows=nrows)
+    return data
+
+@st.cache
 def load_overview_data(nrows):
     data = pd.read_csv('./data/overview.csv', nrows=nrows)
     return data
 
-@st.cache
-def load_prysm_data(nrows):
-    data = pd.read_csv('./data/prysm.csv', nrows=nrows)
-    return data
-
-@st.cache
-def load_lighthouse_data(nrows):
-    data = pd.read_csv('./data/lighthouse.csv', nrows=nrows)
-    return data
-
-@st.cache
-def load_teku_data(nrows):
-    data = pd.read_csv('./data/teku.csv', nrows=nrows)
-    return data
-
-@st.cache
-def load_nimbus_data(nrows):
-    data = pd.read_csv('./data/nimbus.csv', nrows=nrows)
-    return data
-
-@st.cache
-def load_lodestar_data(nrows):
-    data = pd.read_csv('./data/lodestar.csv', nrows=nrows)
-    return data
-
 
 #---Load TOTAL data---
+relay_data = load_relay_data(100)
+relrew_data = load_relrew_data(100)
+reward_data = load_reward_data(100)
 overview_data = load_overview_data(100)
-prysm_data = load_prysm_data(100)
-lighthouse_data = load_lighthouse_data(100)
-teku_data = load_teku_data(100)
-nimbus_data = load_nimbus_data(100)
-lodestar_data = load_lodestar_data(100)
 
 
 #---Import 7d data from .csv---
+@st.cache
+def load_relay7_data(nrows):
+    data = pd.read_csv('./data/relay7.csv', nrows=nrows)
+    return data
+
+@st.cache
+def load_relrew7_data(nrows):
+    data = pd.read_csv('./data/relrew7.csv', nrows=nrows)
+    return data
+
+@st.cache
+def load_reward7_data(nrows):
+    data = pd.read_csv('./data/reward7.csv', nrows=nrows)
+    return data
+
 @st.cache
 def load_overview7_data(nrows):
     data = pd.read_csv('./data/overview7.csv', nrows=nrows)
     return data
 
-@st.cache
-def load_prysm7_data(nrows):
-    data = pd.read_csv('./data/prysm7.csv', nrows=nrows)
-    return data
-
-@st.cache
-def load_lighthouse7_data(nrows):
-    data = pd.read_csv('./data/lighthouse7.csv', nrows=nrows)
-    return data
-
-@st.cache
-def load_teku7_data(nrows):
-    data = pd.read_csv('./data/teku7.csv', nrows=nrows)
-    return data
-
-@st.cache
-def load_nimbus7_data(nrows):
-    data = pd.read_csv('./data/nimbus7.csv', nrows=nrows)
-    return data
-
-@st.cache
-def load_lodestar7_data(nrows):
-    data = pd.read_csv('./data/lodestar7.csv', nrows=nrows)
-    return data
-
 
 #---Load 7d data---
+relay7_data = load_relay7_data(100)
+relrew7_data = load_relrew7_data(100)
+reward7_data = load_reward7_data(100)
 overview7_data = load_overview7_data(100)
-prysm7_data = load_prysm7_data(100)
-lighthouse7_data = load_lighthouse7_data(100)
-teku7_data = load_teku7_data(100)
-nimbus7_data = load_nimbus7_data(100)
-lodestar7_data = load_lodestar7_data(100)
     
 
 selected = option_menu(
@@ -119,12 +95,12 @@ if selected == "From Merge to Now":
 
     #Consensus Clients Overview - Distribution
     with col1:
-        fig = px.pie(overview_data, values='slots', names='Client', title='Client Distribution', color='Client', color_discrete_map=CLIENTCOLOR)
+        fig = px.pie(overview_data, values='slot', names='client', title='Client Distribution', color='client', color_discrete_map=CLIENTCOLOR)
         st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
 
     #Consensus Clients Overview - Rewards/Slot
     with col2:
-        fig = px.bar(overview_data, x = 'Client', y = 'averagereward', color='Client', color_discrete_map=CLIENTCOLOR, title='BlockReward/Slot Grouped by Client')
+        fig = px.bar(reward_data, x = 'client', y = 'reward', color='client', color_discrete_map=CLIENTCOLOR, title='BlockReward/Slot Grouped by Client')
         st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
 
     st.subheader('Data Grouped by Client')
@@ -138,16 +114,13 @@ if selected == "From Merge to Now":
 
     #Prysm - Distribution
         with col1:
-            fig = px.pie(prysm_data, values='slots', names='relay', color='relay', color_discrete_map=RELAYCOLOR, title='Prysm - Relay Distribution')
+            fig = px.pie(relay_data, values='Prysm', names='relay', color='relay', color_discrete_map=RELAYCOLOR, title='Prysm - Relay Distribution')
             st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
 
     #Prysm - Rewards/Slot
         with col2:
-            fig = px.bar(prysm_data, x = 'relay', y = 'averagereward', color='relay', color_discrete_map=RELAYCOLOR, title='Prysm - BlockReward/Slot Grouped by Relay')
+            fig = px.bar(relrew_data, x = 'relay', y = 'Prysm', color='relay', color_discrete_map=RELAYCOLOR, title='Prysm - BlockReward/Slot Grouped by Relay')
             st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
-
-        st.write(prysm_data)
-
 
     #---Lighthouse---
     col1, col2 = st.columns(2)
@@ -155,15 +128,13 @@ if selected == "From Merge to Now":
 
     #Lighthouse - Distribution
         with col1:
-            fig = px.pie(lighthouse_data, values='slots', names='relay', color='relay', color_discrete_map=RELAYCOLOR, title='Lighthouse - Relay Distribution')
+            fig = px.pie(relay_data, values='Lighthouse', names='relay', color='relay', color_discrete_map=RELAYCOLOR, title='Lighthouse - Relay Distribution')
             st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
 
     #Lighthouse - Rewards/Slot
         with col2:
-            fig = px.bar(lighthouse_data, x = 'relay', y = 'averagereward', color='relay', color_discrete_map=RELAYCOLOR, title='Lighthouse - BlockReward/Slot Grouped by Relay')
+            fig = px.bar(relrew_data, x = 'relay', y = 'Lighthouse', color='relay', color_discrete_map=RELAYCOLOR, title='Lighthouse - BlockReward/Slot Grouped by Relay')
             st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
-
-        st.write(lighthouse_data)
 
 
     #---Teku---
@@ -172,15 +143,13 @@ if selected == "From Merge to Now":
 
     #Teku - Distribution
         with col1:
-            fig = px.pie(teku_data, values='slots', names='relay', color='relay', color_discrete_map=RELAYCOLOR, title='Teku - Relay Distribution')
+            fig = px.pie(relay_data, values='Teku', names='relay', color='relay', color_discrete_map=RELAYCOLOR, title='Teku - Relay Distribution')
             st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
 
     #Teku - Rewards/Slot
         with col2:
-            fig = px.bar(teku_data, x = 'relay', y = 'averagereward', color='relay', color_discrete_map=RELAYCOLOR, title='Teku - BlockReward/Slot Grouped by Relay')
+            fig = px.bar(relrew_data, x = 'relay', y = 'Teku', color='relay', color_discrete_map=RELAYCOLOR, title='Teku - BlockReward/Slot Grouped by Relay')
             st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
-
-        st.write(teku_data)
 
 
     #---Nimbus---
@@ -189,15 +158,13 @@ if selected == "From Merge to Now":
 
     #Nimbus - Distribution
         with col1:
-            fig = px.pie(nimbus_data, values='slots', names='relay', color='relay', color_discrete_map=RELAYCOLOR, title='Nimbus - Relay Distribution')
+            fig = px.pie(relay_data, values='Nimbus', names='relay', color='relay', color_discrete_map=RELAYCOLOR, title='Nimbus - Relay Distribution')
             st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
 
     #Nimbus - Rewards/Slot
         with col2:
-            fig = px.bar(nimbus_data, x = 'relay', y = 'averagereward', color='relay', color_discrete_map=RELAYCOLOR, title='Nimbus - BlockReward/Slot Grouped by Relay')
+            fig = px.bar(relrew_data, x = 'relay', y = 'Nimbus', color='relay', color_discrete_map=RELAYCOLOR, title='Nimbus - BlockReward/Slot Grouped by Relay')
             st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
-
-        st.write(nimbus_data)
 
 
     #---Lodestar---
@@ -206,15 +173,14 @@ if selected == "From Merge to Now":
 
     #Lodestar - Distribution
         with col1:
-            fig = px.pie(lodestar_data, values='slots', names='relay', color='relay', color_discrete_map=RELAYCOLOR, title='Lodestar - Relay Distribution')
+            fig = px.pie(relay_data, values='Lodestar', names='relay', color='relay', color_discrete_map=RELAYCOLOR, title='Lodestar - Relay Distribution')
             st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
 
     #Lodestar - Rewards/Slot
         with col2:
-            fig = px.bar(lodestar_data, x = 'relay', y = 'averagereward', color='relay', color_discrete_map=RELAYCOLOR, title='Lodestar - BlockReward/Slot Grouped by Relay')
+            fig = px.bar(relrew_data, x = 'relay', y = 'Lodestar', color='relay', color_discrete_map=RELAYCOLOR, title='Lodestar - BlockReward/Slot Grouped by Relay')
             st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
 
-        st.write(lodestar_data)
 
 if selected == "Last 7 Days":
     st.title(f"You have selected {selected}")
@@ -231,12 +197,12 @@ if selected == "Last 7 Days":
 
     #Consensus Clients Overview - Distribution
     with col1:
-        fig = px.pie(overview7_data, values='slots', names='Client', title='Client Distribution', color='Client', color_discrete_map=CLIENTCOLOR)
+        fig = px.pie(overview7_data, values='slot', names='client', title='Client Distribution', color='client', color_discrete_map=CLIENTCOLOR)
         st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
 
     #Consensus Clients Overview - Rewards/Slot
     with col2:
-        fig = px.bar(overview7_data, x = 'Client', y = 'averagereward', color='Client', color_discrete_map=CLIENTCOLOR, title='BlockReward/Slot Grouped by Client')
+        fig = px.bar(reward7_data, x = 'client', y = 'reward', color='client', color_discrete_map=CLIENTCOLOR, title='BlockReward/Slot Grouped by Client')
         st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
 
     st.subheader('Data Grouped by Client')
@@ -250,15 +216,13 @@ if selected == "Last 7 Days":
 
     #Prysm - Distribution
         with col1:
-            fig = px.pie(prysm7_data, values='slots', names='relay', color='relay', color_discrete_map=RELAYCOLOR, title='Prysm - Relay Distribution')
+            fig = px.pie(relay7_data, values='Prysm', names='relay', color='relay', color_discrete_map=RELAYCOLOR, title='Prysm - Relay Distribution')
             st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
 
     #Prysm - Rewards/Slot
         with col2:
-            fig = px.bar(prysm7_data, x = 'relay', y = 'averagereward', color='relay', color_discrete_map=RELAYCOLOR, title='Prysm - BlockReward/Slot Grouped by Relay')
+            fig = px.bar(relrew7_data, x = 'relay', y = 'Prysm', color='relay', color_discrete_map=RELAYCOLOR, title='Prysm - BlockReward/Slot Grouped by Relay')
             st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
-
-        st.write(prysm7_data)
 
 
     #---Lighthouse---
@@ -267,15 +231,13 @@ if selected == "Last 7 Days":
 
     #Lighthouse - Distribution
         with col1:
-            fig = px.pie(lighthouse7_data, values='slots', names='relay', color='relay', color_discrete_map=RELAYCOLOR, title='Lighthouse - Relay Distribution')
+            fig = px.pie(relay7_data, values='Lighthouse', names='relay', color='relay', color_discrete_map=RELAYCOLOR, title='Lighthouse - Relay Distribution')
             st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
 
     #Lighthouse - Rewards/Slot
         with col2:
-            fig = px.bar(lighthouse7_data, x = 'relay', y = 'averagereward', color='relay', color_discrete_map=RELAYCOLOR, title='Lighthouse - BlockReward/Slot Grouped by Relay')
+            fig = px.bar(relrew7_data, x = 'relay', y = 'Lighthouse', color='relay', color_discrete_map=RELAYCOLOR, title='Lighthouse - BlockReward/Slot Grouped by Relay')
             st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
-
-        st.write(lighthouse7_data)
 
 
     #---Teku---
@@ -284,15 +246,13 @@ if selected == "Last 7 Days":
 
     #Teku - Distribution
         with col1:
-            fig = px.pie(teku7_data, values='slots', names='relay', color='relay', color_discrete_map=RELAYCOLOR, title='Teku - Relay Distribution')
+            fig = px.pie(relay7_data, values='Teku', names='relay', color='relay', color_discrete_map=RELAYCOLOR, title='Teku - Relay Distribution')
             st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
 
     #Teku - Rewards/Slot
         with col2:
-            fig = px.bar(teku7_data, x = 'relay', y = 'averagereward', color='relay', color_discrete_map=RELAYCOLOR, title='Teku - BlockReward/Slot Grouped by Relay')
+            fig = px.bar(relrew7_data, x = 'relay', y = 'Teku', color='relay', color_discrete_map=RELAYCOLOR, title='Teku - BlockReward/Slot Grouped by Relay')
             st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
-
-        st.write(teku7_data)
 
 
     #---Nimbus---
@@ -301,15 +261,13 @@ if selected == "Last 7 Days":
 
     #Nimbus - Distribution
         with col1:
-            fig = px.pie(nimbus7_data, values='slots', names='relay', color='relay', color_discrete_map=RELAYCOLOR, title='Nimbus - Relay Distribution')
+            fig = px.pie(relay7_data, values='Nimbus', names='relay', color='relay', color_discrete_map=RELAYCOLOR, title='Nimbus - Relay Distribution')
             st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
 
     #Nimbus - Rewards/Slot
         with col2:
-            fig = px.bar(nimbus7_data, x = 'relay', y = 'averagereward', color='relay', color_discrete_map=RELAYCOLOR, title='Nimbus - BlockReward/Slot Grouped by Relay')
+            fig = px.bar(relrew7_data, x = 'relay', y = 'Nimbus', color='relay', color_discrete_map=RELAYCOLOR, title='Nimbus - BlockReward/Slot Grouped by Relay')
             st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
-
-        st.write(nimbus7_data)
 
 
     #---Lodestar---
@@ -318,16 +276,13 @@ if selected == "Last 7 Days":
 
     #Lodestar - Distribution
         with col1:
-            fig = px.pie(lodestar7_data, values='slots', names='relay', color='relay', color_discrete_map=RELAYCOLOR, title='Lodestar - Relay Distribution')
+            fig = px.pie(relay7_data, values='Lodestar', names='relay', color='relay', color_discrete_map=RELAYCOLOR, title='Lodestar - Relay Distribution')
             st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
 
     #Lodestar - Rewards/Slot
         with col2:
-            fig = px.bar(lodestar7_data, x = 'relay', y = 'averagereward', color='relay', color_discrete_map=RELAYCOLOR, title='Lodestar - BlockReward/Slot Grouped by Relay')
+            fig = px.bar(relrew7_data, x = 'relay', y = 'Lodestar', color='relay', color_discrete_map=RELAYCOLOR, title='Lodestar - BlockReward/Slot Grouped by Relay')
             st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
-
-        st.write(lodestar7_data)
-
 
 
 st.markdown('Data provided by [blockprint](https://github.com/sigp/blockprint) and [beaconcha.in](https://beaconcha.in/). Thank You:heart:')
