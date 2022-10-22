@@ -118,7 +118,7 @@ if selected == "From Merge to Now":
     #st.subheader('Data Grouped by Client')
     st.markdown("<h3 style='text-align: center; color: white;'>Data Grouped by Client</h3>", unsafe_allow_html=True)
 
-    contact_options = ["Select Client", "Prysm", "Lighthouse", "Teku", "Nimbus", "Lodestar"]
+    contact_options = ["Prysm", "Lighthouse", "Teku", "Nimbus", "Lodestar"]
     contact_selected = st.selectbox("Select Client", label_visibility="hidden", options = contact_options)
 
     #---Prysm---
@@ -224,7 +224,7 @@ if selected == "Last 7 Days":
     #st.subheader('Data Grouped by Client')
     st.markdown("<h3 style='text-align: center; color: white;'>Data Grouped by Client</h3>", unsafe_allow_html=True)
 
-    contact_options = ["Select Client", "Prysm", "Lighthouse", "Teku", "Nimbus", "Lodestar"]
+    contact_options = ["Prysm", "Lighthouse", "Teku", "Nimbus", "Lodestar"]
     contact_selected = st.selectbox("Select Client", label_visibility="hidden", options = contact_options)
 
     #---Prysm---
