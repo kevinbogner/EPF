@@ -14,6 +14,11 @@ For now, the primary sources of the data are [blockprint](https://github.com/sig
 ## Journal Backlog
 :sparkler: **Detailed Research & Development Process: https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner**.
 
+**[10/22/2022]**
+- [Wrote a script](https://user-images.githubusercontent.com/114221396/197349383-831a1bac-5b35-4704-ac91-b7947e581126.png) to automize the .csv file creation.
+- Reduced the amount of required .csv files to make the website more lightweight.
+- Thinking about how I want to proceed: Mid-term, I want to group the data in different timeframes to allow users time-specific drill-downs. Long-term, I want to publish the data through a Twitterbot with daily reports.
+
 **[10/21/2022]**
 - Fetched [data of Clients and Relays](https://user-images.githubusercontent.com/114221396/197228380-c0a6eb72-f5b9-421b-a72a-1afcfeb617f8.png).
 - [Created Dropdown](https://user-images.githubusercontent.com/114221396/197228617-374b8e22-3650-47f6-a8b0-6b6b67a3f2c9.png) to display Client data.
