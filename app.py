@@ -80,17 +80,19 @@ selected = option_menu(
 )
 
 if selected == "From Merge to Now":
-    st.title(f"You have selected {selected}")
         #---Overview---
     col1, col2 = st.columns(2)
-    col1.metric("Range of Slots:", "4700013 - 4953535")
-    col2.metric("Range of Blocks:", "15537394  - 15789106")
 
+    highest = open('./data/highest.txt', "r")
+    highest = int(highest.read())
+    lowest = open('./data/lowest.txt', "r")
+    lowest = int(lowest.read())
+
+    col1.metric("From Slot:", lowest)
+    col2.metric("To Slot:", highest)
 
 
     #---Consensus Clients Overview---
-    st.subheader('Consensus Clients Overview')
-
     col1, col2 = st.columns(2)
 
     #Consensus Clients Overview - Distribution
@@ -183,16 +185,19 @@ if selected == "From Merge to Now":
 
 
 if selected == "Last 7 Days":
-    st.title(f"You have selected {selected}")
         #---Overview---
     col1, col2 = st.columns(2)
-    col1.metric("Range of Slots", "4903535 - 4953535")
-    col2.metric("Range of Blocks", "15739391 - 15789106")
+
+    highest7 = open('./data/highest7.txt', "r")
+    highest7 = int(highest7.read())
+    lowest7 = open('./data/lowest7.txt', "r")
+    lowest7 = int(lowest7.read())
+
+    col1.metric("From Slot:", lowest7)
+    col2.metric("To Slot:", highest7)
 
 
     #---Consensus Clients Overview---
-    st.subheader('Consensus Clients Overview')
-
     col1, col2 = st.columns(2)
 
     #Consensus Clients Overview - Distribution
