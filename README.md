@@ -14,7 +14,7 @@ For now, the primary sources of the data are [blockprint](https://github.com/sig
 ## Journal Backlog
 :sparkler: **Detailed Research & Development Process: https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner**.
 
-**[10/22/2022]**
+**[10/23/2022]**
 - [New Charts](https://user-images.githubusercontent.com/114221396/197408608-579d1049-2e83-475f-bb48-058e5be75821.png) with data for Slots after a skipped Slot.
 - Updated the Website with [new data](https://user-images.githubusercontent.com/114221396/197408657-b96ef5a1-823d-42df-8d25-943337bcbd60.png).
 - [More automation](https://user-images.githubusercontent.com/114221396/197408789-cf116660-8e6f-4432-8a58-8f805dfb11c4.png) for data extraction.
