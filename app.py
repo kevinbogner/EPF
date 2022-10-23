@@ -27,22 +27,22 @@ RELAYCOLOR = {'flashbots':'blueviolet', 'bloxroute (max profit)':'crimson', 'blo
 #---Import TOTAL data from .csv---
 @st.cache
 def load_relay_data(nrows):
-    data = pd.read_csv('./data/relay.csv', nrows=nrows)
+    data = pd.read_csv('./data/total/relay.csv', nrows=nrows)
     return data
 
 @st.cache
 def load_relrew_data(nrows):
-    data = pd.read_csv('./data/relrew.csv', nrows=nrows)
+    data = pd.read_csv('./data/total/relrew.csv', nrows=nrows)
     return data
 
 @st.cache
 def load_reward_data(nrows):
-    data = pd.read_csv('./data/reward.csv', nrows=nrows)
+    data = pd.read_csv('./data/total/reward.csv', nrows=nrows)
     return data
 
 @st.cache
 def load_overview_data(nrows):
-    data = pd.read_csv('./data/overview.csv', nrows=nrows)
+    data = pd.read_csv('./data/total/overview.csv', nrows=nrows)
     return data
 
 
@@ -56,22 +56,22 @@ overview_data = load_overview_data(100)
 #---Import 7d data from .csv---
 @st.cache
 def load_relay7_data(nrows):
-    data = pd.read_csv('./data/relay7.csv', nrows=nrows)
+    data = pd.read_csv('./data/7days/relay7.csv', nrows=nrows)
     return data
 
 @st.cache
 def load_relrew7_data(nrows):
-    data = pd.read_csv('./data/relrew7.csv', nrows=nrows)
+    data = pd.read_csv('./data/7days/relrew7.csv', nrows=nrows)
     return data
 
 @st.cache
 def load_reward7_data(nrows):
-    data = pd.read_csv('./data/reward7.csv', nrows=nrows)
+    data = pd.read_csv('./data/7days/reward7.csv', nrows=nrows)
     return data
 
 @st.cache
 def load_overview7_data(nrows):
-    data = pd.read_csv('./data/overview7.csv', nrows=nrows)
+    data = pd.read_csv('./data/7days/overview7.csv', nrows=nrows)
     return data
 
 
@@ -93,9 +93,9 @@ if selected == "From Merge to Now":
         #---Overview---
     col1, col2 = st.columns(2)
 
-    highest = open('./data/highest.txt', "r")
+    highest = open('./data/total/highest.txt', "r")
     highest = int(highest.read())
-    lowest = open('./data/lowest.txt', "r")
+    lowest = open('./data/total/lowest.txt', "r")
     lowest = int(lowest.read())
 
     col1.metric("From Slot:", lowest)
@@ -199,9 +199,9 @@ if selected == "Last 7 Days":
         #---Overview---
     col1, col2 = st.columns(2)
 
-    highest7 = open('./data/highest7.txt', "r")
+    highest7 = open('./data/7days/highest7.txt', "r")
     highest7 = int(highest7.read())
-    lowest7 = open('./data/lowest7.txt', "r")
+    lowest7 = open('./data/7days/lowest7.txt', "r")
     lowest7 = int(lowest7.read())
 
     col1.metric("From Slot:", lowest7)
