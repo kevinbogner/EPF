@@ -80,7 +80,35 @@ relay7_data = load_relay7_data(100)
 relrew7_data = load_relrew7_data(100)
 reward7_data = load_reward7_data(100)
 overview7_data = load_overview7_data(100)
-    
+
+
+#---Import SKIPPED data from .csv---
+@st.cache
+def load_overviewskipped_data(nrows):
+    data = pd.read_csv('./data/afterskipped/overviewskipped.csv', nrows=nrows)
+    return data
+
+@st.cache
+def load_rewardskipped_data(nrows):
+    data = pd.read_csv('./data/afterskipped/rewardskipped.csv', nrows=nrows)
+    return data
+
+@st.cache
+def load_overviewex_data(nrows):
+    data = pd.read_csv('./data/exclude/overviewex.csv', nrows=nrows)
+    return data
+
+@st.cache
+def load_rewardex_data(nrows):
+    data = pd.read_csv('./data/exclude/rewardex.csv', nrows=nrows)
+    return data
+
+
+#---Load 7d data---
+overviewskipped_data = load_overviewskipped_data(100)
+rewardskipped_data = load_rewardskipped_data(100)
+overviewex_data = load_overviewex_data(100)
+rewardex_data = load_rewardex_data(100)
 
 selected = option_menu(
     menu_title=None,
@@ -193,6 +221,25 @@ if selected == "From Merge to Now":
         with col2:
             fig = px.bar(relrew_data, x = 'relay', y = 'Lodestar', color='relay', color_discrete_map=RELAYCOLOR, title='Lodestar - BlockReward/Slot Grouped by Relay')
             st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
+
+
+    st.markdown("<h3 style='text-align: center; color: white;'>Data after a Skipped Slot</h3>", unsafe_allow_html=True)
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        fig = px.pie(overviewskipped_data, values='slot', names='client', title='Client Distribution after a Skipped Slot', color='client', color_discrete_map=CLIENTCOLOR)
+        st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
+
+        fig = px.pie(overviewex_data, values='slot', names='client', title='Client Distribution excluding Slots after a Skipped Slot', color='client', color_discrete_map=CLIENTCOLOR)
+        st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
+
+    with col2:
+        fig = px.bar(rewardskipped_data, x = 'client', y = 'reward', color='client', color_discrete_map=CLIENTCOLOR, title='BlockReward/Slot Grouped by Client after a Skipped Slot')
+        st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
+
+        fig = px.bar(rewardex_data, x = 'client', y = 'reward', color='client', color_discrete_map=CLIENTCOLOR, title='BlockReward/Slot Grouped by Client excluding Slots after a Skipped Slot')
+        st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
 
 
 if selected == "Last 7 Days":
