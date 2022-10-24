@@ -103,12 +103,36 @@ def load_rewardex_data(nrows):
     data = pd.read_csv('./data/exclude/rewardex.csv', nrows=nrows)
     return data
 
+@st.cache
+def load_overviewskippednonmev_data(nrows):
+    data = pd.read_csv('./data/afterskipped/nonmev/overviewskippednonmev.csv', nrows=nrows)
+    return data
+
+@st.cache
+def load_rewardskippednonmev_data(nrows):
+    data = pd.read_csv('./data/afterskipped/nonmev/rewardskippednonmev.csv', nrows=nrows)
+    return data
+
+@st.cache
+def load_overviewexnonmev_data(nrows):
+    data = pd.read_csv('./data/exclude/nonmev/overviewexnonmev.csv', nrows=nrows)
+    return data
+
+@st.cache
+def load_rewardexnonmev_data(nrows):
+    data = pd.read_csv('./data/exclude/nonmev/rewardexnonmev.csv', nrows=nrows)
+    return data
+
 
 #---Load 7d data---
 overviewskipped_data = load_overviewskipped_data(100)
 rewardskipped_data = load_rewardskipped_data(100)
 overviewex_data = load_overviewex_data(100)
 rewardex_data = load_rewardex_data(100)
+overviewskippednonmev_data = load_overviewskippednonmev_data(100)
+rewardskippednonmev_data = load_rewardskippednonmev_data(100)
+overviewexnonmev_data = load_overviewexnonmev_data(100)
+rewardexnonmev_data = load_rewardexnonmev_data(100)
 
 selected = option_menu(
     menu_title=None,
@@ -225,21 +249,43 @@ if selected == "From Merge to Now":
 
     st.markdown("<h3 style='text-align: center; color: white;'>Data after a Skipped Slot</h3>", unsafe_allow_html=True)
 
+
+    contact_options = ["Include MEV-Blocks", "Only non-MEV-Blocks"]
+    contact_selected_mev = st.selectbox("Select MEV", label_visibility="hidden", options = contact_options)
+
+    
     col1, col2 = st.columns(2)
 
-    with col1:
-        fig = px.pie(overviewskipped_data, values='slot', names='client', title='Client Distribution after a Skipped Slot', color='client', color_discrete_map=CLIENTCOLOR)
-        st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
+    if contact_selected_mev == "Include MEV-Blocks":
+        with col1:
+            fig = px.pie(overviewskipped_data, values='slot', names='client', title='Client Distribution after a Skipped Slot', color='client', color_discrete_map=CLIENTCOLOR)
+            st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
 
-        fig = px.pie(overviewex_data, values='slot', names='client', title='Client Distribution excluding Slots after a Skipped Slot', color='client', color_discrete_map=CLIENTCOLOR)
-        st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
+            fig = px.pie(overviewex_data, values='slot', names='client', title='Client Distribution excluding Slots after a Skipped Slot', color='client', color_discrete_map=CLIENTCOLOR)
+            st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
 
-    with col2:
-        fig = px.bar(rewardskipped_data, x = 'client', y = 'reward', color='client', color_discrete_map=CLIENTCOLOR, title='BlockReward/Slot Grouped by Client after a Skipped Slot')
-        st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
+        with col2:
+            fig = px.bar(rewardskipped_data, x = 'client', y = 'reward', color='client', color_discrete_map=CLIENTCOLOR, title='BlockReward/Slot Grouped by Client after a Skipped Slot')
+            st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
 
-        fig = px.bar(rewardex_data, x = 'client', y = 'reward', color='client', color_discrete_map=CLIENTCOLOR, title='BlockReward/Slot Grouped by Client excluding Slots after a Skipped Slot')
-        st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
+            fig = px.bar(rewardex_data, x = 'client', y = 'reward', color='client', color_discrete_map=CLIENTCOLOR, title='BlockReward/Slot Grouped by Client excluding Slots after a Skipped Slot')
+            st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
+
+
+    if contact_selected_mev == "Only non-MEV-Blocks":
+        with col1:
+            fig = px.pie(overviewskippednonmev_data, values='slot', names='client', title='Client Distribution after a Skipped Slot', color='client', color_discrete_map=CLIENTCOLOR)
+            st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
+
+            fig = px.pie(overviewexnonmev_data, values='slot', names='client', title='Client Distribution excluding Slots after a Skipped Slot', color='client', color_discrete_map=CLIENTCOLOR)
+            st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
+
+        with col2:
+            fig = px.bar(rewardskippednonmev_data, x = 'client', y = 'reward', color='client', color_discrete_map=CLIENTCOLOR, title='BlockReward/Slot Grouped by Client after a Skipped Slot')
+            st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
+
+            fig = px.bar(rewardexnonmev_data, x = 'client', y = 'reward', color='client', color_discrete_map=CLIENTCOLOR, title='BlockReward/Slot Grouped by Client excluding Slots after a Skipped Slot')
+            st.plotly_chart(fig, use_container_width=True, sharing="streamlit")
 
 
 if selected == "Last 7 Days":
