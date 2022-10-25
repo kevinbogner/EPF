@@ -14,6 +14,10 @@ For now, the primary sources of the data are [blockprint](https://github.com/sig
 ## Journal Backlog
 :sparkler: **Detailed Research & Development Process: https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner**.
 
+**[10/25/2022]**
+- Code Cleanup.
+- Realized that Consensus Client Block Rewards are different depending on the source used, e.g. [Etherscan API](https://etherscan.io/apis) or https://beaconcha.in/. Therefore I might tackle the issue by proposing a new endpoint for the [Beacon-API](https://ethereum.github.io/beacon-APIs/#/Beacon) with the help of [sproul](https://github.com/michaelsproul), who not only pointed the issue out but also has been working on an API for Consensus Client Block Rewards already.
+
 **[10/24/2022]**
 - Added [New Charts](https://user-images.githubusercontent.com/114221396/197732818-ea516e9c-cf90-4c51-8854-9a9e3d26afd3.png) with a [Dropdown](https://user-images.githubusercontent.com/114221396/197732953-87b3f4a3-9e7f-413e-975b-870e64a428bd.png).
 
