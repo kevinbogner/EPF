@@ -14,6 +14,10 @@ For now, the primary sources of the data are [blockprint](https://github.com/sig
 ## Journal Backlog
 :sparkler: **Detailed Research & Development Process: https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner**.
 
+**[10/27/2022]**
+- Started working on Dev Update #3.
+- Listened to [Ethereum Core Devs Meeting #148](https://www.youtube.com/watch?v=oQfEW8LdE88).
+
 **[10/26/2022]**
 
 - Setting up [Lighthouse](https://github.com/sigp/lighthouse).
