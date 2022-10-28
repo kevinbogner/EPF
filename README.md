@@ -14,6 +14,11 @@ For now, the primary sources of the data are [blockprint](https://github.com/sig
 ## Journal Backlog
 :sparkler: **Detailed Research & Development Process: https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner**.
 
+**[10/28/2022]**
+- Continue working on Dev Update #3, which I will finish this week.
+- Researching validator rewards because that's the next thing I will be working on: [Ben Edginton's book](https://eth2book.info/bellatrix/part2/incentives/rewards) and [Pintail's guide](https://pintail.xyz/posts/modelling-the-impact-of-altair/).
+- Meanwhile, I continue setting up my [Lighthouse node](https://github.com/sigp/lighthouse), so I can start experimenting with APIs once my Dev Update is published. [Checkpoint sync](https://lighthouse-book.sigmaprime.io/checkpoint-sync.html?highlight=purge#automatic-checkpoint-sync) is done, and now the node is [reconstructing states](https://lighthouse-book.sigmaprime.io/checkpoint-sync.html#reconstructing-states).
+
 **[10/27/2022]**
 - Started working on Dev Update #3.
 - Listened to [Ethereum Core Devs Meeting #148](https://www.youtube.com/watch?v=oQfEW8LdE88).
