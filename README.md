@@ -14,6 +14,9 @@ For now, the primary sources of the data are [blockprint](https://github.com/sig
 ## Journal Backlog
 :sparkler: **Detailed Research & Development Process: https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner**.
 
+**[10/30/2022]**
+- Published [Dev Update #3](https://hackmd.io/@lODlsf2CR9uWlyIyEdjjPQ/HJhEF6wVj).
+
 **[10/28/2022]**
 - Continue working on Dev Update #3, which I will finish this week.
 - Researching validator rewards because that's the next thing I will be working on: [Ben Edginton's book](https://eth2book.info/bellatrix/part2/incentives/rewards) and [Pintail's guide](https://pintail.xyz/posts/modelling-the-impact-of-altair/).
