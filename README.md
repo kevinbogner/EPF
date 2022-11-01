@@ -14,6 +14,10 @@ For now, the primary sources of the data are [blockprint](https://github.com/sig
 ## Journal Backlog
 :sparkler: **Detailed Research & Development Process: https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner**.
 
+**[10/31/2022]**
+- Attended EPF standup call and got some advice on handling big codebases in open-source projects. Focus on small areas; don't try to understand everything and familiarize yourself with testing.
+- Installed and set up Linux for [Lighthouses' development environment](https://lighthouse-book.sigmaprime.io/setup.html).
+
 **[10/30/2022]**
 - Published [Dev Update #3](https://hackmd.io/@lODlsf2CR9uWlyIyEdjjPQ/HJhEF6wVj).
 
