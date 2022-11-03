@@ -14,6 +14,9 @@ For now, the primary sources of the data are [blockprint](https://github.com/sig
 ## Journal Backlog
 :sparkler: **Detailed Research & Development Process: https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner**.
 
+**[11/03/2022]**
+- Created a [PR](https://github.com/sigp/lighthouse/pull/3681) for [Issue #3672](https://github.com/sigp/lighthouse/issues/3672).
+
 **[11/02/2022]**
 - Continue working on a [Lighthouse Issue](https://github.com/sigp/lighthouse/issues/3672).
 
