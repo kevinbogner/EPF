@@ -14,6 +14,10 @@ For now, the primary sources of the data are [blockprint](https://github.com/sig
 ## Journal Backlog
 :sparkler: **Detailed Research & Development Process: https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner**.
 
+**[11/08/2022]**
+- More discussion on the [draft PR](https://github.com/ethereum/beacon-APIs/pull/260) for the beacon API endpoints.
+- Started writing Dev Update #4.
+
 **[11/07/2022]**
 - Created a [draft PR](https://github.com/ethereum/beacon-APIs/pull/260) to work with [NC](https://github.com/naviechan) on beacon API endpoints.
 - Attended weekly standup call.
