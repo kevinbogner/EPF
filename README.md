@@ -14,6 +14,10 @@ For now, the primary sources of the data are [blockprint](https://github.com/sig
 ## Journal Backlog
 :sparkler: **Detailed Research & Development Process: https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner**.
 
+**[11/10/2022]**
+- Finished some modifications for the ['Run a Node' guide for the Lighthouse book](https://github.com/sigp/lighthouse/pull/3681). It should be ready tomorrow for review.
+- Small modifications for [`sync_committee_rewards`](https://github.com/ethereum/beacon-APIs/pull/262).
+
 **[11/09/2022]**
 - Currently working on three things simultaneously:
   - [Add endpoints for `per-validator rewards`](https://github.com/ethereum/beacon-APIs/pull/260).
