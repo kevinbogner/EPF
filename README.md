@@ -16,6 +16,9 @@ For now, the primary sources of the data are [blockprint](https://github.com/sig
 ## Journal Backlog
 :sparkler: **Detailed Research & Development Process: https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner**.
 
+**[13/11/2022]**
+- Working on Dev Update #5 should be published at the start of the coming week.
+
 **[12/11/2022]**
 - Finished [project draft for the EPF](https://github.com/kevinbogner/cohort-three/blob/project/projects/consensus_client_reward_APIs.md).
 
