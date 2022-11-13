@@ -4,6 +4,8 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 
 The aim is to provide a **Data Analysis of the Consensus Clients landscape to statistically identify inconsistency, seeking to improve the Consensus Layer.**
 
+**Development updates**: https://github.com/kevinbogner/cohort-three/blob/master/development-updates.md#kevinbogner
+
 ## Overview
 
 💾 **Check Out the Website: https://kevinbogner-data-analysis-consensus-clients-app-lz484x.streamlitapp.com/. Still super early stage.**
