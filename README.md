@@ -16,6 +16,9 @@ For now, the primary sources of the data are [blockprint](https://github.com/sig
 ## Journal Backlog
 :sparkler: **Detailed Research & Development Process: https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner**.
 
+**[11/17/2022]**
+- Discovered [lint errors](https://user-images.githubusercontent.com/114221396/202462233-61615b34-2f6a-4fe9-af71-6c7e0a3af9d7.png) on our PRs.
+
 **[11/16/2022]**
 - Feedback and modifications on [PR#260](https://github.com/ethereum/beacon-APIs/pull/260) and [PR#262](https://github.com/ethereum/beacon-APIs/pull/262).
 
