@@ -16,6 +16,9 @@ For now, the primary sources of the data are [blockprint](https://github.com/sig
 ## Journal Backlog
 :sparkler: **Detailed Research & Development Process: https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner**.
 
+**[11/22/2022]**
+- Call with NC and sproul - Kickoff call regarding validator rewards.
+
 **[11/21/2022]**
 - Attended EPF standup call.
 - Error on CI/CD pipeline probably caused by a faulty version.
