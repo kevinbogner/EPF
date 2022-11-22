@@ -16,6 +16,10 @@ For now, the primary sources of the data are [blockprint](https://github.com/sig
 ## Journal Backlog
 :sparkler: **Detailed Research & Development Process: https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner**.
 
+**[11/21/2022]**
+- Attended EPF standup call.
+- Error on CI/CD pipeline probably caused by a faulty version.
+
 **[11/18/2022]**
 - [PR#260](https://github.com/ethereum/beacon-APIs/pull/260) and [PR#262](https://github.com/ethereum/beacon-APIs/pull/262) are ready for review. We got minor lint errors we need to fix.
 
