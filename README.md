@@ -17,7 +17,7 @@ For now, the primary sources of the data are [blockprint](https://github.com/sig
 :sparkler: **Detailed Research & Development Process: https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner**.
 
 **[11/22/2022]**
-- Call with NC and sproul - Kickoff call regarding validator rewards.
+- Call with NC and sproul - Kickoff call regarding validator rewards ([notes](https://hackmd.io/@sproul/consensus-rewards-m1)).
 
 **[11/21/2022]**
 - Attended EPF standup call.
