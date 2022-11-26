@@ -16,6 +16,10 @@ For now, the primary sources of the data are [blockprint](https://github.com/sig
 ## Journal Backlog
 :sparkler: **Detailed Research & Development Process: https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner**.
 
+**[11/25/2022]**
+- Continue working with the [Rust book](https://doc.rust-lang.org/book/title-page.html) :crab:.
+- Modifications on https://github.com/sigp/lighthouse/pull/3681.
+
 **[11/24/2022]**
 - Goal for this week is to finish the [Rust book](https://doc.rust-lang.org/book/title-page.html) to start next week with the implementation into Lighthouse.
 
