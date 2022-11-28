@@ -10,7 +10,7 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
   - [x] [PR for block and attestation rewards](https://github.com/ethereum/beacon-APIs/pull/260)
   - [x] PR for sync committee rewards](https://github.com/ethereum/beacon-APIs/pull/262)
   - [x] [Endpoints](https://ethereum.github.io/beacon-APIs/?urls.primaryName=dev#/Experimental)
-- [x] Implement APIs into [Lighthouse](https://github.com/sigp/lighthouse)
+- [ ] Implement APIs into [Lighthouse](https://github.com/sigp/lighthouse)
   - [ ] Sync committee rewards
   - [ ] Block rewards
   - [ ] Attestation rewards
