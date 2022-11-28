@@ -2,20 +2,31 @@
 
 This project is created as part of the third cohort of the [Ethereum Protocol Fellowship (EPF)](https://github.com/eth-protocol-fellows/cohort-three/blob/master/program-guide/program-details.md).
 
-The aim is to provide a **Data Analysis of the Consensus Clients landscape to statistically identify inconsistency, seeking to improve the Consensus Layer.**
+## Milestones
 
-**Development updates**: https://github.com/kevinbogner/cohort-three/blob/master/development-updates.md#kevinbogner
+- [x] [Initialized dashboard](https://kevinbogner-data-analysis-consensus-clients-app-lz484x.streamlitapp.com/)
+- [x] [Project proposal](https://github.com/eth-protocol-fellows/cohort-three/blob/master/projects/consensus_client_reward_APIs.md)
+- [x] Implement [`beacon-APIs`](https://github.com/ethereum/beacon-APIs) endpoints
+  - [x] [PR for block and attestation rewards](https://github.com/ethereum/beacon-APIs/pull/260)
+  - [x] PR for sync committee rewards](https://github.com/ethereum/beacon-APIs/pull/262)
+  - [x] [Endpoints](https://ethereum.github.io/beacon-APIs/?urls.primaryName=dev#/Experimental)
+- [x] Implement APIs into [Lighthouse](https://github.com/sigp/lighthouse)
+  - [ ] Sync committee rewards
+  - [ ] Block rewards
+  - [ ] Attestation rewards
+- [ ] Use data provided by the new API for the dashboard
 
-## Overview
+## Resources
 
-💾 **Check Out the Website: https://kevinbogner-data-analysis-consensus-clients-app-lz484x.streamlitapp.com/. Still super early stage.**
+[**Dashboard**](https://kevinbogner-data-analysis-consensus-clients-app-lz484x.streamlitapp.com/)
 
-For now, the primary sources of the data are [blockprint](https://github.com/sigp/blockprint) for client data and https://beaconcha.in/ for reward data.
+[**Consensus client reward APIs - Project**](https://github.com/eth-protocol-fellows/cohort-three/blob/master/projects/consensus_client_reward_APIs.md)
 
+[**Development updates**](https://github.com/kevinbogner/cohort-three/blob/master/development-updates.md#kevinbogner)
+
+[**Detailed Research & Development Process**](https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner)
 
 ## Journal Backlog
-:sparkler: **Detailed Research & Development Process: https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner**.
-
 **[11/25/2022]**
 - Continue working with the [Rust book](https://doc.rust-lang.org/book/title-page.html) :crab:.
 - Modifications on https://github.com/sigp/lighthouse/pull/3681.
