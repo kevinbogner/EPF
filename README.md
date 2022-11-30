@@ -27,22 +27,3 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 [**Detailed Research & Development Process**](https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner)
 
 ## Journal Backlog
-**[11/29/2022]**
-- Attended EPF office hour call.
-- Started writing dev update #7.
-- Continued working on [`sync_committee_rewards`](https://github.com/kevinbogner/lighthouse/commit/5f244188e5ecb38af56270b48ba44e62191635e0).
-
-**[11/28/2022]**
-- Restructured [this repo](https://github.com/kevinbogner/data-analysis-consensus-clients/commit/b941fc5e0c7928d1f1f0a3e3fefe7d1107c2b3fc).
-- Guide for Lighthouse merged on [how to run a beacon node](https://github.com/sigp/lighthouse/pull/3681).
-- Attended EPF standup call.
-
-**[11/25/2022]**
-- Continue working with the [Rust book](https://doc.rust-lang.org/book/title-page.html) :crab:.
-- Modifications on https://github.com/sigp/lighthouse/pull/3681.
-
-**[11/24/2022]**
-- Goal for this week is to finish the [Rust book](https://doc.rust-lang.org/book/title-page.html) to start next week with the implementation into Lighthouse.
-
-**[11/23/2022]**
-- [Dev Update #6](https://hackmd.io/@lODlsf2CR9uWlyIyEdjjPQ/rkNsMdm8j) published.
