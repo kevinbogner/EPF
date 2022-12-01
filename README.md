@@ -27,6 +27,9 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 [**Detailed Research & Development Process**](https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner)
 
 ## Journal Backlog
+**[12/01/2022]**
+- Meeting with NC ([notes](https://hackmd.io/@kevinbogner/meeting-notes-dev-rewards-API)).
+
 **[11/30/2022]**
 - Published [dev update #7](https://hackmd.io/@kevinbogner/HJOn-F7wi).
 - Meeting with NC regarding the `sync_committee_rewards`.
