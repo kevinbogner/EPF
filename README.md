@@ -27,3 +27,5 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 [**Detailed Research & Development Process**](https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner)
 
 ## Journal Backlog
+**[12/07/2022]**
+- Continue working on `sync_committee_rewards`.
