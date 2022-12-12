@@ -27,6 +27,12 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 [**Detailed Research & Development Process**](https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner)
 
 ## Journal Backlog
+**[12/12/2022]**
+- Opened [draft PR](https://github.com/sigp/lighthouse/pull/3790) on `sync_committe_rewards`.
+- Received [feedback](https://discordapp.com/channels/605577013327167508/1035866197146742814/1051709012963508234) on Lighthouse Discord on the endpoint.
+- Scheduled call with NC and sproul on 12/19/2022 to talk about the APIs.
+- Attended EPF standup call.
+
 **[12/09/2022]**
 - Continue working on [`sync_committee_rewards`](https://github.com/naviechan/lighthouse/commit/29d18223ff8c9cbebed7a93285f9768f3f1ba27a).
 
