@@ -27,6 +27,9 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 [**Detailed Research & Development Process**](https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner)
 
 ## Journal Backlog
+**[12/14/2022]**
+- Published [Dev Update #9](https://hackmd.io/@kevinbogner/dev-update-9).
+
 **[12/13/2022]**
 - Attended [Office Hours call #5](https://github.com/eth-protocol-fellows/cohort-three/issues/193).
 
