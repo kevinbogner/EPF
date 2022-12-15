@@ -11,9 +11,9 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
   - [x] [PR for sync committee rewards](https://github.com/ethereum/beacon-APIs/pull/262)
   - [x] [Endpoints](https://ethereum.github.io/beacon-APIs/?urls.primaryName=dev#/Experimental)
 - [ ] Implement APIs into [Lighthouse](https://github.com/sigp/lighthouse)
-  - [ ] Sync committee rewards
-  - [ ] Block rewards
-  - [ ] Attestation rewards
+  - [ ] [`sync_committee_rewards`](https://github.com/sigp/lighthouse/pull/3790)
+  - [ ] `block_rewards`
+  - [ ] `attestation_rewards`
 - [ ] Use data provided by the new API for the dashboard
 
 ## Resources
@@ -27,6 +27,9 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 [**Detailed Research & Development Process**](https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner)
 
 ## Journal Backlog
+**[12/15/2022]**
+- Continue working on [`sync_committee_rewards`](https://github.com/sigp/lighthouse/pull/3790).
+
 **[12/14/2022]**
 - Published [Dev Update #9](https://hackmd.io/@kevinbogner/dev-update-9).
 
