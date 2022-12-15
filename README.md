@@ -22,31 +22,10 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 
 [**Consensus client reward APIs - Project**](https://github.com/eth-protocol-fellows/cohort-three/blob/master/projects/consensus_client_reward_APIs.md)
 
-[**Development updates**](https://github.com/kevinbogner/cohort-three/blob/master/development-updates.md#kevinbogner)
+[**Development updates**](https://github.com/eth-protocol-fellows/cohort-three/blob/master/development-updates.md#kevinbogner)
 
-[**Detailed Research & Development Process**](https://github.com/eth-protocol-fellows/cohort-three/tree/master/notes/kevinbogner)
+[**Detailed Research & Development Process**](https://github.com/eth-protocol-fellows/cohort-three/blob/master/notes/kevinbogner.md)
 
 ## Journal Backlog
 **[12/15/2022]**
 - Continue working on [`sync_committee_rewards`](https://github.com/sigp/lighthouse/pull/3790).
-
-**[12/14/2022]**
-- Published [Dev Update #9](https://hackmd.io/@kevinbogner/dev-update-9).
-
-**[12/13/2022]**
-- Attended [Office Hours call #5](https://github.com/eth-protocol-fellows/cohort-three/issues/193).
-
-**[12/12/2022]**
-- Opened [draft PR](https://github.com/sigp/lighthouse/pull/3790) on `sync_committe_rewards`.
-- Received [feedback](https://discordapp.com/channels/605577013327167508/1035866197146742814/1051709012963508234) on Lighthouse Discord on the endpoint.
-- Scheduled call with NC and sproul on 12/19/2022 to talk about the APIs.
-- Attended EPF standup call.
-
-**[12/09/2022]**
-- Continue working on [`sync_committee_rewards`](https://github.com/naviechan/lighthouse/commit/29d18223ff8c9cbebed7a93285f9768f3f1ba27a).
-
-**[12/08/2022]**
-- [Discussion](https://discord.com/channels/605577013327167508/1035866197146742814/1050025366653239336) in the Lighthouse Discord regarding the `sync_committee_rewards`.
-
-**[12/07/2022]**
-- Continue working on [`sync_committee_rewards`](https://github.com/naviechan/lighthouse/commit/0b5d6ad5ec5425e8abaf5be486286ce2dc8dce79), [`attestation_rewards`](https://github.com/naviechan/lighthouse/commit/5470918d759cd9995a413227be5e76b8a7db02a8), and [`block_rewards`](https://github.com/naviechan/lighthouse/commit/6557a55e3f443614ed9ebc3647bccab9471c074e).
