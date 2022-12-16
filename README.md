@@ -27,5 +27,8 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 [**Detailed Research & Development Process**](https://github.com/eth-protocol-fellows/cohort-three/blob/master/notes/kevinbogner.md)
 
 ## Journal Backlog
+**[12/16/2022]**
+- Add endpoints to `common/eth2/src/lib.rs` ([`block_rewards`](https://github.com/naviechan/lighthouse/commit/2e0ee4beec245af01b51818d3be8b04c821aa648) and [`attestation_rewards`](https://github.com/naviechan/lighthouse/commit/b9046aa12da31fd4432f7776e05082266d332674)).
+
 **[12/15/2022]**
 - Continue working on [`sync_committee_rewards`](https://github.com/sigp/lighthouse/pull/3790).
