@@ -27,9 +27,13 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 [**Detailed Research & Development Process**](https://github.com/eth-protocol-fellows/cohort-three/blob/master/notes/kevinbogner.md)
 
 ## Journal Backlog
+**[12/19/2022]**
+- Meeting with NC and sproul.
+- Attended EPF standup call.
+
 **[12/16/2022]**
 - Add endpoints to `common/eth2/src/lib.rs` ([`block_rewards`](https://github.com/naviechan/lighthouse/commit/2e0ee4beec245af01b51818d3be8b04c821aa648) and [`attestation_rewards`](https://github.com/naviechan/lighthouse/commit/b9046aa12da31fd4432f7776e05082266d332674)).
-- Restructure [`block_rewards`](https://github.com/naviechan/lighthouse/commit/8283f594f8fe9dca21196496235a7b3be3a92907) and [`attestation_rewards`](https://github.com/naviechan/lighthouse/commit/20e57f03a4c56e2c1e4ec1f592dfb39f039c4e75)
+- Restructure [`block_rewards`](https://github.com/naviechan/lighthouse/commit/8283f594f8fe9dca21196496235a7b3be3a92907) and [`attestation_rewards`](https://github.com/naviechan/lighthouse/commit/20e57f03a4c56e2c1e4ec1f592dfb39f039c4e75).
 
 **[12/15/2022]**
 - Continue working on [`sync_committee_rewards`](https://github.com/sigp/lighthouse/pull/3790).
