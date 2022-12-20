@@ -13,7 +13,7 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 - [ ] Implement APIs into [Lighthouse](https://github.com/sigp/lighthouse)
   - [ ] [`sync_committee_rewards`](https://github.com/sigp/lighthouse/pull/3790)
   - [ ] `block_rewards`
-  - [ ] `attestation_rewards`
+  - [ ] [`attestation_rewards`](https://github.com/sigp/lighthouse/pull/3822)
 - [ ] Use data provided by the new API for the dashboard
 
 ## Resources
@@ -30,6 +30,7 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 **[12/20/2022]**
 - Working on [`attestation_rewards`](https://github.com/naviechan/lighthouse/commit/1d27163d0b15bb745628325bc1820bae97f21eb3).
 - Attended Office Hours call.
+- Opened `attestation_rewards` [draft PR](https://github.com/sigp/lighthouse/pull/3822).
 
 **[12/19/2022]**
 - Meeting with NC and sproul ([meeting notes](https://hackmd.io/@sproul/consensus-rewards-m2)).
