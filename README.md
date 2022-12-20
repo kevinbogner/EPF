@@ -27,8 +27,12 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 [**Detailed Research & Development Process**](https://github.com/eth-protocol-fellows/cohort-three/blob/master/notes/kevinbogner.md)
 
 ## Journal Backlog
+**[12/20/2022]**
+- Working on [`attestation_rewards`](https://github.com/naviechan/lighthouse/commit/1d27163d0b15bb745628325bc1820bae97f21eb3).
+- Attended Office Hours call.
+
 **[12/19/2022]**
-- Meeting with NC and sproul.
+- Meeting with NC and sproul ([meeting notes](https://hackmd.io/@sproul/consensus-rewards-m2)).
 - Attended EPF standup call.
 
 **[12/16/2022]**
