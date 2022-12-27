@@ -27,6 +27,10 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 [**Detailed Research & Development Process**](https://github.com/eth-protocol-fellows/cohort-three/blob/master/notes/kevinbogner.md)
 
 ## Journal Backlog
+**[12/27/2022]**
+- Took a break during Christmas and will be fully back at the start of the coming year.
+- Attended Office Hours call #7.
+
 **[12/23/2022]**
 - Adding the actual rewards for the [`attestation_rewards`](https://github.com/sigp/lighthouse/pull/3822) endpoint.
 
