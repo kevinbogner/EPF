@@ -27,6 +27,10 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 [**Detailed Research & Development Process**](https://github.com/eth-protocol-fellows/cohort-three/blob/master/notes/kevinbogner.md)
 
 ## Journal Backlog
+**[01/03/2023]**
+- Attended Office Hours call #8 - AMA with Piper Merriam.
+- Received feedback from NC on the [`attestation_rewards`](https://github.com/sigp/lighthouse/pull/3822).
+
 **[01/02/2023]**
 - Attended standup call.
 - Building our branch manually to test our endpoints.
