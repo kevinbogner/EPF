@@ -27,3 +27,10 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 [**Detailed Research & Development Process**](https://github.com/eth-protocol-fellows/cohort-three/blob/master/notes/kevinbogner.md)
 
 ## Journal Backlog
+**[01/10/2023]**
+- Attended Office Hours call.
+- Added [`ideal_rewards`](https://github.com/sigp/lighthouse/commit/4cd7486d7eebbcadd6090f49c2934d48896cd65f) to [`attestation_rewards`](https://github.com/sigp/lighthouse/pull/3822).
+
+**[01/09/2023]**
+- Attended standup call.
+- Continued working on [`attestation_rewards`](https://github.com/sigp/lighthouse/pull/3822).
