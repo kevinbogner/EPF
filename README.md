@@ -27,6 +27,10 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 [**Detailed Research & Development Process**](https://github.com/eth-protocol-fellows/cohort-three/blob/master/notes/kevinbogner.md)
 
 ## Journal Backlog
+**[01/13/2023]**
+- [Minor fixes](https://github.com/sigp/lighthouse/commit/90e6fb72017e2ac056ec22d01db0dcc24da1ac15) on [`attestation_rewards`](https://github.com/sigp/lighthouse/pull/3822).
+- Sproul gave us [feedback](https://github.com/sigp/lighthouse/pull/3790#pullrequestreview-1246907504) on `sync_committee_rewards`.
+
 **[01/12/2023]**
 - Fixed some [errors](https://github.com/naviechan/lighthouse/commit/f3cc9d1ba0508856331782fbac1ec295f531053f) of [`attestation_rewards`](https://github.com/sigp/lighthouse/pull/3822).
 
