@@ -27,6 +27,9 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 [**Detailed Research & Development Process**](https://github.com/eth-protocol-fellows/cohort-three/blob/master/notes/kevinbogner.md)
 
 ## Journal Backlog
+**[01/14/2023]**
+- Research on [EIP-6110](https://eips.ethereum.org/EIPS/eip-6110) and its [Engine API changes](https://github.com/ethereum/execution-apis/blob/main/src/engine/experimental/eip6110.md).
+
 **[01/13/2023]**
 - [Minor fixes](https://github.com/sigp/lighthouse/commit/90e6fb72017e2ac056ec22d01db0dcc24da1ac15) on [`attestation_rewards`](https://github.com/sigp/lighthouse/pull/3822).
 - Sproul gave us [feedback](https://github.com/sigp/lighthouse/pull/3790#pullrequestreview-1246907504) on `sync_committee_rewards`.
