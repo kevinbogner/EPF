@@ -27,6 +27,9 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 [**Detailed Research & Development Process**](https://github.com/eth-protocol-fellows/cohort-three/blob/master/notes/kevinbogner.md)
 
 ## Journal Backlog
+**[01/19/2023]**
+- Continue working on `attestation_rewards`: added `?` operator, renamed variables, and updated formatting.
+
 **[01/18/2023]**
 - Looked into the [question mark operator](https://doc.rust-lang.org/reference/expressions/operator-expr.html#the-question-mark-operator) but couldn't progress with the `attestation_rewards` just yet.
 
