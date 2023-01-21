@@ -28,7 +28,7 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 
 ## Journal Backlog
 **[01/20/2023]**
-- Continue working on `attestation_rewards`: fixed `execution_optimistic, and added log.
+- Continue working on `attestation_rewards`: fixed `execution_optimistic`, and added `log`.
 
 **[01/19/2023]**
 - Continue working on `attestation_rewards`: added `?` operator, renamed variables, and updated formatting.
