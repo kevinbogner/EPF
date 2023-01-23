@@ -27,6 +27,10 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 [**Detailed Research & Development Process**](https://github.com/eth-protocol-fellows/cohort-three/blob/master/notes/kevinbogner.md)
 
 ## Journal Backlog
+**[01/23/2023]**
+- Finished `attestation_rewards`; they are now ready for review.
+- Attended standup call.
+
 **[01/22/2023]**
 - Finished `ideal_rewards` for `attestation_rewards`.
 
