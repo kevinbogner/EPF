@@ -11,7 +11,7 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
   - [x] [PR for sync committee rewards](https://github.com/ethereum/beacon-APIs/pull/262)
   - [x] [Endpoints](https://ethereum.github.io/beacon-APIs/?urls.primaryName=dev#/Experimental)
 - [ ] Implement APIs into [Lighthouse](https://github.com/sigp/lighthouse)
-  - [ ] [`sync_committee_rewards`](https://github.com/sigp/lighthouse/pull/3790)
+  - [x] [`sync_committee_rewards`](https://github.com/sigp/lighthouse/pull/3790)
   - [ ] `block_rewards`
   - [ ] [`attestation_rewards`](https://github.com/sigp/lighthouse/pull/3822)
 - [ ] Use data provided by the new API for the dashboard
@@ -27,6 +27,13 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 [**Detailed Research & Development Process**](https://github.com/eth-protocol-fellows/cohort-three/blob/master/notes/kevinbogner.md)
 
 ## Journal Backlog
+**[01/25/2023]**
+- Addressed the comments of the review.
+
+**[01/24/2023]**
+- Attended Office Hours call #11.
+- Received a review on `attestation_rewards`.
+
 **[01/23/2023]**
 - Finished `attestation_rewards`; they are now ready for review.
 - Attended standup call.
