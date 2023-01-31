@@ -27,33 +27,4 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 [**Detailed Research & Development Process**](https://github.com/eth-protocol-fellows/cohort-three/blob/master/notes/kevinbogner.md)
 
 ## Journal Backlog
-**[01/30/2023]**
-- Tested `attestation_rewards` manually.
-- Attended standup call. 
 
-**[01/25/2023]**
-- Addressed the comments of the review.
-
-**[01/24/2023]**
-- Attended Office Hours call #11.
-- Received a review on `attestation_rewards`.
-
-**[01/23/2023]**
-- Finished `attestation_rewards`; they are now ready for review.
-- Attended standup call.
-
-**[01/22/2023]**
-- Finished `ideal_rewards` for `attestation_rewards`.
-
-**[01/20/2023]**
-- Continue working on `attestation_rewards`: fixed `execution_optimistic`, and added `log`.
-
-**[01/19/2023]**
-- Continue working on `attestation_rewards`: added `?` operator, renamed variables, and updated formatting.
-
-**[01/18/2023]**
-- Looked into the [question mark operator](https://doc.rust-lang.org/reference/expressions/operator-expr.html#the-question-mark-operator) but couldn't progress with the `attestation_rewards` just yet.
-
-**[01/17/2023]**
-- Convert `ideal_rewards` from a [HashMap into a Vector](https://github.com/naviechan/lighthouse/commit/d2bd6ed2df98aeb25ea2e0aefa23ade7d1274a1c).
-- Attended Office Hours call #10.
