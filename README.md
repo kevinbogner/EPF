@@ -27,4 +27,5 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 [**Detailed Research & Development Process**](https://github.com/eth-protocol-fellows/cohort-three/blob/master/notes/kevinbogner.md)
 
 ## Journal Backlog
-
+**[02/01/2023]**
+- Searching for test data to check if validators that are not eligible receive `0` rewards for their three votes.
