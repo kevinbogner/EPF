@@ -27,5 +27,8 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 [**Detailed Research & Development Process**](https://github.com/eth-protocol-fellows/cohort-three/blob/master/notes/kevinbogner.md)
 
 ## Journal Backlog
+**[02/02/2023]**
+- Working on an error that was caused by [this](https://github.com/sigp/lighthouse/pull/3822/commits/e8c93ffd79026d9ca8e517df747a99173ba1f071) commit, where pubkeys and validators aren`t accepted as request bodies.
+
 **[02/01/2023]**
 - Searching for test data to check if validators that are not eligible receive `0` rewards for their three votes.
