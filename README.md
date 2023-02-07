@@ -13,7 +13,7 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 - [ ] Implement APIs into [Lighthouse](https://github.com/sigp/lighthouse)
   - [x] [`sync_committee_rewards`](https://github.com/sigp/lighthouse/pull/3790)
   - [ ] `block_rewards`
-  - [ ] [`attestation_rewards`](https://github.com/sigp/lighthouse/pull/3822)
+  - [x] [`attestation_rewards`](https://github.com/sigp/lighthouse/pull/3822)
 - [ ] Use data provided by the new API for the dashboard
 
 ## Resources
@@ -27,6 +27,9 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 [**Detailed Research & Development Process**](https://github.com/eth-protocol-fellows/cohort-three/blob/master/notes/kevinbogner.md)
 
 ## Journal Backlog
+**[02/06/2023]**
+- Got the [`attestation_rewards`](https://github.com/sigp/lighthouse/pull/3822) merged. 
+
 **[02/02/2023]**
 - Working on an error that was caused by [this](https://github.com/sigp/lighthouse/pull/3822/commits/e8c93ffd79026d9ca8e517df747a99173ba1f071) commit, where pubkeys and validators aren`t accepted as request bodies.
 
