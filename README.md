@@ -26,12 +26,3 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 [**Dashboard** *(abandoned)*](https://kevinbogner-data-analysis-consensus-clients-app-lz484x.streamlitapp.com/)
 
 ## Journal Backlog
-**[02/06/2023]**
-- Got the [`attestation_rewards`](https://github.com/sigp/lighthouse/pull/3822) merged. 
-- NC got the [`block_rewards`](https://github.com/sigp/lighthouse/pull/3907) merged.
-
-**[02/02/2023]**
-- Working on an error that was caused by [this](https://github.com/sigp/lighthouse/pull/3822/commits/e8c93ffd79026d9ca8e517df747a99173ba1f071) commit, where pubkeys and validators aren`t accepted as request bodies.
-
-**[02/01/2023]**
-- Searching for test data to check if validators that are not eligible receive `0` rewards for their three votes.
