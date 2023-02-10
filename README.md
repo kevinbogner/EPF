@@ -26,3 +26,12 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 [**Dashboard** *(abandoned)*](https://kevinbogner-data-analysis-consensus-clients-app-lz484x.streamlitapp.com/)
 
 ## Journal Backlog
+**[02/10/2023]**
+- More research on [EIP-6110](https://hackmd.io/@n0ble/deposits-breakout).
+
+**[02/09/2023]**
+- Add [`DepositReceipt`](https://github.com/mkalinin/eth2.0-specs/blob/deposits/specs/eip6110/beacon-chain.md#depositreceipt).
+
+**[02/08/2023]**
+- Started research on [EIP-6110](https://eips.ethereum.org/EIPS/eip-6110).
+- Initialized EIP-6110 [branch](https://github.com/kevinbogner/lighthouse/tree/eip6110).
