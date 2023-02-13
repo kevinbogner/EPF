@@ -26,6 +26,10 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 [**Dashboard** *(abandoned)*](https://kevinbogner-data-analysis-consensus-clients-app-lz484x.streamlitapp.com/)
 
 ## Journal Backlog
+**[02/13/2023]**
+- Continued working on EIP-6110. [Added structure for functions](https://github.com/kevinbogner/lighthouse/commit/fdd77388ef01ab9887addffad237e8c976e9593d).
+- Attended standup call.
+
 **[02/10/2023]**
 - More research on [EIP-6110](https://hackmd.io/@n0ble/deposits-breakout).
 
