@@ -26,6 +26,10 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 [**Dashboard** *(abandoned)*](https://kevinbogner-data-analysis-consensus-clients-app-lz484x.streamlitapp.com/)
 
 ## Journal Backlog
+**[02/14/2023]**
+- [Implemented `pending_deposits` into `BeaconState`](https://github.com/kevinbogner/lighthouse/commit/4cb28b99ed53bb8f9971bc811605693423a3cca1).
+- Attended Office Hours call #14.
+
 **[02/13/2023]**
 - Continued working on EIP-6110. [Added structure for functions](https://github.com/kevinbogner/lighthouse/commit/fdd77388ef01ab9887addffad237e8c976e9593d).
 - Attended standup call.
