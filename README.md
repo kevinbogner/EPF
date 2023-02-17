@@ -26,6 +26,12 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 [**Dashboard** *(abandoned)*](https://kevinbogner-data-analysis-consensus-clients-app-lz484x.streamlitapp.com/)
 
 ## Journal Backlog
+**[02/17/2023]**
+- Modified [`process_operations`](https://github.com/kevinbogner/lighthouse/pull/1/commits/7b2cf8b01fd34c56ffbf4c4543f3ed24bd197622) according to EIP-6110.
+
+**[02/16/2023]**
+- Kick-off meeting for PoC of EIP-6110.
+
 **[02/15/2023]**
 - [Implemented](https://github.com/sigp/lighthouse/commit/3df825173f07bd54ccc794e25128740d139b826f) `get_validator_from_indexed_deposit_data`, `apply_indexed_deposit_data`, and `process_pending_deposits`.
 
