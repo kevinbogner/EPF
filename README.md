@@ -26,6 +26,9 @@ This project is created as part of the third cohort of the [Ethereum Protocol Fe
 [**Dashboard** *(abandoned)*](https://kevinbogner-data-analysis-consensus-clients-app-lz484x.streamlitapp.com/)
 
 ## Journal Backlog
+**[02/19/2023]**
+- Modify [`initialize_beacon_state_from_eth1`](https://github.com/kevinbogner/lighthouse/commit/e13faf69db1a740b9948c89bf70fd7b361d0004d).
+
 **[02/17/2023]**
 - Modified [`process_operations`](https://github.com/kevinbogner/lighthouse/pull/1/commits/7b2cf8b01fd34c56ffbf4c4543f3ed24bd197622) according to EIP-6110.
 
